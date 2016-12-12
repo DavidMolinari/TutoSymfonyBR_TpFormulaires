@@ -8,13 +8,11 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 class LectureCtrlController extends Controller
 {
     /**
-     * @Route("/index/{nom}")
+     * @Route("/index/")
      */
-    public function indexAction($nom)
+    public function indexAction()
     {
-        return $this->render('AppBundle:LectureCtrl:index.html.twig', array(
-            // ...
-        ));
+        return $this->render('AppBundle:LectureCtrl:index.html.twig', array());
     }
 
 }
