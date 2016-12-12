@@ -1,0 +1,25 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}Premiere{% endblock %}
+
+{% block body %}
+    {{ form_start(leFormulaire) }}
+    <p>{{ form_row(leFormulaire.num,{'label' : 'Numéro : '}) }}</p>
+    <h2>
+    {{ form_row(leFormulaire.nom, {'label':'Nom de l\'employe '}) }}
+    {{ form_row(leFormulaire.prenom, {'label':'Prénom de l\'employe '}) }}
+    </h2>
+    <p>{{ form_row(leFormulaire.dateNaissance) }}</p>
+    {{ form_end(leFormulaire) }}
+    <h3> Son sport préféré :
+        {% if(sport=='Rugby') %}
+            {{ sport|upper }}
+        {% else %}
+            {{ 'Aucun intérêt' }}
+        {% endif %}
+    </h3>
+    <h3>ses voitures préférées :</h3>
+    {% for uneAuto in autos %}
+        <li><h4>{{ uneAuto }}</h4></li>
+    {% endfor %}
+{% endblock %}

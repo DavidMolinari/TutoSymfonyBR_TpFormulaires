@@ -3,5 +3,12 @@
 {% block title %}Les Formulaires symfony{% endblock %}
 
 {% block body %}
-{{ form(leFormulaire) }}
+    {{ form_start(leFormulaire) }}
+    <p>{{ form_row(leFormulaire.num,{'label' : 'Numéro : '}) }}</p>
+    <p><h2>
+        {{ form_row(leFormulaire.nom, {'label':'Nom de l\'employe '}) }}
+        {{ form_row(leFormulaire.prenom, {'label':'Prénom de l\'employe '}) }}
+    </h2></p>
+    <p>{{ form_row(leFormulaire.dateNaissance) }}</p>
+    {{ form_end(leFormulaire) }}
 {% endblock %}
