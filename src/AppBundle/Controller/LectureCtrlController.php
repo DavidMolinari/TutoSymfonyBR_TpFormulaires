@@ -72,4 +72,13 @@ class LectureCtrlController extends Controller
         return $this->render('AppBundle:LectureCtrl:afficheEmpTwig.html.twig',
             array('uneEntree'=>'je viens du controller','leFormulaire'=>$formulaire->createView()));
     }
+
+    /**
+     * @Route(path="/afficheEmpTwigCss/",
+     *     name="lectureCtrl_afficheEmpTwigCss")
+     */
+    public function afficheEmpTwigCssAction()
+    {
+        return $this->render('AppBundle:LectureCtrl:afficheEmpTwigCss.html.twig',array());
+    }
 }
