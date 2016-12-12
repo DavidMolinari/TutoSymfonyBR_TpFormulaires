@@ -1,3 +1,8 @@
+gest_lecture:
+    resource: "@GestLectureBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
 app:
     resource: "@AppBundle/Controller/"
     type:     annotation
