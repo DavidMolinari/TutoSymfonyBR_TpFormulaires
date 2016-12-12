@@ -3,8 +3,10 @@
 namespace AppBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Bdls\AppBundle\Entity\Employe;
+use AppBundle\Entity\Employe;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
 
 class LectureCtrlController extends Controller
 {

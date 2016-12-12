@@ -1,5 +1,5 @@
 <?php
-namespace AppBundle\Entity;
+namespace Bdls\GestLectureBundle\Entity;
 
 class Employe{
     private $num;
@@ -10,7 +10,7 @@ class Employe{
     public function getNum(){return $this->num;}
     public function setNum($num){$this->num = $num;}
 
-    public function getNom(){return $this->nom;}
+    public function getNom(){return nom;}
     public function setNom($nom){$this->nom = $nom;}
 
     public function getPrenom(){return $this->prenom;}
